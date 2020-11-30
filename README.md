@@ -1,11 +1,11 @@
-# Spring boot Module 
+# Spring Boot Module 
 
-## [1. dev, staging, prod YML 파일 적용하기, 파라미터로  받기]()
+## [1. How to make YUM(DEV, STAGING, PROD) files useful]()
 
-## [2. spring boot initializer]()
+## [2. How to set up initializer]()
 
-## [3. 로그 설정(logback.xml) 파라미터 받기]()
+## [3. How to use logback.xml]()
 
-## [4. AOP(Controller, Service, DAO) 만들기]()     
+## [4. How to make AOP(Controller, Service, DAO)]()     
 
-## [5. JUnit(Controller, Service, DAO) 만들기]()  
+## [5. How to make JUnit(Controller, Service, DAO)]()  
