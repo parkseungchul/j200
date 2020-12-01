@@ -1,0 +1,8 @@
+server:
+  message: prod
+  codesN: prod-code1, prod-code2, prod-code3
+  codesA:
+    prod-codeA,
+    prod-codeB,
+    prod-codeC
+        

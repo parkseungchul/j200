@@ -1,0 +1,7 @@
+server:
+  message: staging
+  codesN: staging-code1, staging-code2, staging-code3
+  codesA:
+    staging-codeA,
+    staging-codeB,
+    staging-codeC

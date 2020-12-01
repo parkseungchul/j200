@@ -1,0 +1,7 @@
+server:
+  message: dev
+  codesN: dev-code1, dev-code2, dev-code3
+  codesA:
+    dev-codeA,
+    dev-codeB,
+    dev-codeC
