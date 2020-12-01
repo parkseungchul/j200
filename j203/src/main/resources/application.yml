@@ -1,0 +1,16 @@
+spring:
+  h2:
+    console:
+      enabled: true  # H2 웹 콘솔을 사용하겠다는 의미
+      path: /test_db  # 콘솔의 경로
+  datasource:
+    driver-class-name: org.h2.Driver  
+    url: jdbc:h2:file:~/j203_db;AUTO_SERVER=TRUE  #접속 URL
+  jpa:
+    hibernate:
+      ddl-auto: create
+logging:
+  level:
+    root: warn
+    com.psc.j203: debug
+
