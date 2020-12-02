@@ -1,4 +1,6 @@
 spring:
+  profiles:
+    active: dev
   h2:
     console:
       enabled: true  # H2 웹 콘솔을 사용하겠다는 의미
@@ -13,4 +15,6 @@ logging:
   level:
     root: warn
     com.psc.j203: debug
+  pattern:
+    console: "%d{yyyy:MM:dd HH:mm:ss.SSS} %-5level --- [%thread] %logger{35} %M: %msg %n"
 
