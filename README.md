@@ -9,9 +9,11 @@
 ### 6. YML file priority  
 #  
 #
-## [J202. How to use logback.xml]()
-### Type 1. Use Parameter 
-### Type 2. Use spring profile element tag in logback.xml  
+## [J202. How to use logback]()
+### logback configuration  
+### - TYPE A. Use Parameter 
+### - TYPE B. Use spring profile  
+### How to user logger
 #  
 #
 ## [J203. How to make JUnit(Controller, Service, DAO)]()  
