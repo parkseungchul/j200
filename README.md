@@ -1,14 +1,12 @@
 # Spring Boot Tips 
 
-## [1. How to make YUM(DEV, STAGING, PROD) files useful]()
-### Method called when application starts
-- ApplicationListener
-### How to allocate variables
-- @Value("${ ~ }")
-### How to active a profile by parameter
-- java -jar -Dspring.profiles.active=prod
-### YML file priority
-- YUM file inside jar file < Local YML File
+## [J201. How to Use YUM Files to Smart]()
+### 1. YML File separation each Area
+### 2. How to allocate a variable
+### 3. Method called when application starts
+### 4. How to allocate variables
+### 5. How to active a profile by parameter
+### 6. YML file priority
 
 ## [2. How to use logback.xml]()
 ### Type 1. Use parameter
