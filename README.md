@@ -9,7 +9,7 @@
 ### 6. YML file priority  
 #  
 #
-## [J202. How to use logback]()
+## [J202. How to use logback](https://www.youtube.com/watch?v=RZArmII4bfY&list=PLogzC_RPf25FXvkWEK4IafUylvWCkPI8i&index=2)
 ### logback configuration  
 ### - TYPE A. Use Parameter 
 ### - TYPE B. Use spring profile  
@@ -17,7 +17,7 @@
 #  
 #
 ## [J203. How to make JUnit(Controller, Service, DAO)]()  
-### 1. 테스트 환경 구성
+### 
 #### - H2 DB 구성 
 #### - DAO 생성
 #### - Service 생성
@@ -25,7 +25,6 @@
 #### - UI 생성  
 #  
 #
-## [3. How to make AOP(Controller, Service, DAO)]()  
-#  
+
 
   
