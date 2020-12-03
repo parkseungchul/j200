@@ -1,6 +1,6 @@
 # Spring Boot Tips  
 # 
-## [J201. How to Use YUM Files to Smart]()
+## [J201. How to Use YUM Files to Smart](https://www.youtube.com/watch?v=HPOnsSihP1I&list=PLogzC_RPf25FXvkWEK4IafUylvWCkPI8i&index=1)
 ### 1. YML File separation each Area
 ### 2. How to allocate a variable
 ### 3. Method called when application starts
