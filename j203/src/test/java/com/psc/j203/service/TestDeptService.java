@@ -40,8 +40,6 @@ public class TestDeptService {
 		log.debug("↑↑↑↑↑ DeptService Test ↑↑↑↑↑");
 	}
 	
-	
-
 	@Test
 	@Order(1)
 	public void A001_DEPT_SVC_입력() {

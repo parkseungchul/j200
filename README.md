@@ -16,13 +16,17 @@
 ### How to user logger
 #  
 #
-## [J203. How to make JUnit(Controller, Service, DAO)]()  
-### 
-#### - H2 DB 구성 
-#### - DAO 생성
-#### - Service 생성
-#### - Controller 생성
-#### - UI 생성  
+## [J203. How to make JUnit]
+### Spring Boot 환경 구성 (web, thymeleaf, h2, jpa, devtools, lombok)
+### H2 DB 구성, 로그 구성
+### JPA 생성, ApplcationReadyEvent 
+### JUnit for JPA 
+### Service 생성
+### JUnit for Service 
+### Controller 생성
+### UI 생성 
+### 기동 테스트 
+### JUnit for Controller
 #  
 #
 

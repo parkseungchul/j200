@@ -17,4 +17,3 @@ logging:
     com.psc.j203: debug
   pattern:
     console: "%d{yyyy:MM:dd HH:mm:ss.SSS} %-5level --- [%thread] %logger{35} %M: %msg %n"
-
