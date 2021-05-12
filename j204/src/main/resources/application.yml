@@ -1,0 +1,17 @@
+server:
+  port: 8000
+
+keycloak:
+  realm: my_realm
+  auth-server-url: http://localhost:8080/auth
+  ssl-required: external
+  resource: my_client
+  credentials:
+    secret: 597439a1-ac08-4347-ab5a-1e8f7e3491c4
+  use-resource-role-mappings: true
+  bearer-only: true
+
+logging:
+  level:
+    root: INFO
+    com.psc.sample.keycloak: DEBUG
