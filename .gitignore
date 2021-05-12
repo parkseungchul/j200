@@ -1,0 +1,12 @@
+/.idea/
+/j204/gradle/wrapper/
+/j204/gradlew
+/j204/gradlew.bat
+/j205/.gradle/
+/j205/gradle/wrapper/
+/j205/biz/gradle/wrapper/
+/j205/biz/gradlew
+/j205/biz/gradlew.bat
+/j205/gateway/gradle/wrapper/
+/j205/gateway/gradlew
+/j205/gateway/gradlew.bat

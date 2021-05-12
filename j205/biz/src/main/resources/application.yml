@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: biz
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://127.0.0.1:8080/auth/realms/my_realm
+
+logging.level:
+  org.springframework.cloud.gateway: DEBUG
+  org.springframework.security: DEBUG
+  org.springframework.web.reactive.function.client: DEBUG
+  pl.piomin: DEBUG
+
+server.port: 8040
+
