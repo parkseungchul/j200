@@ -1,6 +1,6 @@
 # Spring Boot Tips  
 # 
-## [J201. How to Use YUM Files to Smart]
+# J201. How to Use YUM Files to Smart
 ## [youtube link] (https://youtu.be/QFsFOggPXAc)
 ## [Source] (https://github.com/parkseungchul/j200/tree/master/j201)
 ### 1. YML File separation each Area
@@ -11,7 +11,7 @@
 ### 6. YML file priority  
 #  
 #
-## [J202. How to use logback]
+# J202. How to use logback
 ## [youtube link] (https://youtu.be/BlQYF1DfJIg)
 ## [Source] (https://github.com/parkseungchul/j200/tree/master/j202)
 ### logback configuration  
@@ -20,7 +20,7 @@
 ### How to user logger
 #  
 #
-## [J203. Spring Boot JUnit]
+# J203. Spring Boot JUnit
 ## [youtube link] (https://youtu.be/YW-KPFSLcS4)
 ## [Source] (https://github.com/parkseungchul/j200/tree/master/j203)
 ### Project(H2 DB)
@@ -32,7 +32,7 @@
 ### Controller JUnit
 #  
 #
-## [J204. Spring Boot + Security + JWT + keycloak]
+# J204. Spring Boot + Security + JWT + keycloak
 ## [youtube link] (https://youtu.be/gEJpwogGbHw)
 ## [Source] (https://github.com/parkseungchul/j200/tree/master/j204)
 ### keycloak?
