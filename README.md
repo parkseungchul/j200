@@ -40,5 +40,17 @@
 ### keycloak 설정
 ### curl 검증
 ### spring 연동
+#
+#
+# J205. OAuth2 + Gateway + JWT + keycloak + Security
+## [youtube link] (https://youtu.be/HOmIz9qntCo)
+## [Source] (https://github.com/parkseungchul/j200/tree/master/j205)
+### OAuth2
+### Keycloak 설정
+### 빌드 환경 구성
+### biz 소스 만들기
+### gateway 소스 만들기
+### curl 테스트
+
 
   

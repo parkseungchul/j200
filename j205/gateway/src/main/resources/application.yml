@@ -6,7 +6,7 @@ spring:
       default-filters:
         - TokenRelay
       routes:
-        - id: callme-service
+        - id: gateway
           uri: http://127.0.0.1:8040
           predicates:
             - Path=/api/**
@@ -22,16 +22,16 @@ spring:
             userinfo-uri: http://127.0.0.1:8080/auth/realms/my_realm/protocol/openid-connect/userinfo
             user-name-attribute: preferred_username
         registration:
-          my_client:
+          my_client_a:
             provider: keycloak
-            client-id: my_client
-            client-secret: 597439a1-ac08-4347-ab5a-1e8f7e3491c4
+            client-id: my_client_a
+            client-secret: 85bb6df9-a676-4641-a3f3-796eecf02726
             authorization-grant-type: authorization_code
             redirect-uri: "{baseUrl}/login/oauth2/code/keycloak"
-          my_client2:
+          my_client_b:
             provider: keycloak
-            client-id: my_client2
-            client-secret: 0619fb0d-9b42-4fd9-abb4-9dfc3d50bd87
+            client-id: my_client_b
+            client-secret: 24c1e7fc-fc0b-44c0-8446-2c4b11da1efa
             authorization-grant-type: authorization_code
             redirect-uri: "{baseUrl}/login/oauth2/code/keycloak"
 
