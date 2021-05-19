@@ -5,7 +5,8 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://localhost:8080/auth/realms/my_realm
+          issuer-uri: http://127.0.0.1:8080/auth/realms/my_realm
+          # 이거 왜 유닉스랑 윈도우랑 다르게 동작하냐...
 
 logging.level:
   org.springframework.cloud.gateway: DEBUG

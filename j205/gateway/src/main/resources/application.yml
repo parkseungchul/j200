@@ -25,13 +25,13 @@ spring:
           my_client_a:
             provider: keycloak
             client-id: my_client_a
-            client-secret: 85bb6df9-a676-4641-a3f3-796eecf02726
+            client-secret: e685eb5b-82e7-4528-84fc-e97b15b5b07f
             authorization-grant-type: authorization_code
             redirect-uri: "{baseUrl}/login/oauth2/code/keycloak"
           my_client_b:
             provider: keycloak
             client-id: my_client_b
-            client-secret: 24c1e7fc-fc0b-44c0-8446-2c4b11da1efa
+            client-secret: dd860d16-d498-4743-bf2d-41f253303724
             authorization-grant-type: authorization_code
             redirect-uri: "{baseUrl}/login/oauth2/code/keycloak"
 

@@ -15,7 +15,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	protected void configure(HttpSecurity http) throws Exception {
 		http.authorizeRequests(authorize ->
 				authorize
-				.antMatchers("/api/profile").hasAnyAuthority("SCOPE_profile, SCOPE_email")
+				.antMatchers("/api/profile").permitAll()
 				.antMatchers("/api/client_a").hasAnyAuthority("SCOPE_CLIENT_A")
 				.antMatchers("/api/client_b").hasAnyAuthority("SCOPE_CLIENT_B")
 				.anyRequest().authenticated()

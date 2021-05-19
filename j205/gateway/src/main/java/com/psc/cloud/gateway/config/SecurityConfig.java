@@ -11,7 +11,6 @@ import static org.springframework.security.config.Customizer.withDefaults;
 @Configuration
 @EnableWebFluxSecurity
 public class SecurityConfig {
-
 	@Bean
 	public SecurityWebFilterChain springSecurityFilterChain(ServerHttpSecurity http) {
 		http.authorizeExchange(exchanges -> exchanges.anyExchange().authenticated())
@@ -19,7 +18,4 @@ public class SecurityConfig {
 		http.csrf().disable();
 		return http.build();
 	}
-
-
-
 }
