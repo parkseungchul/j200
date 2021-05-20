@@ -1,14 +1,12 @@
-package com.psc.cloud.biz2.api;
+package com.psc.cloud.gateway.api;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.ReactiveSecurityContextHolder;
 import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import reactor.core.publisher.Mono;
 
 @Slf4j
 @RestController
@@ -17,17 +15,25 @@ public class ApiController {
 
 	@GetMapping("/profile")
 	public String profile() {
-		return "Scopes profile";
+		return "profile";
 	}
 
 
 	@GetMapping("/client_a")
 	public String client_a() {
-		return "Scopes client_a";
+		return "client_a";
 	}
 
 	@GetMapping("/client_b")
 	public String client_b() {
-		return "Scopes client_b";
+		return "client_b";
 	}
+
+	@GetMapping("/deny")
+	public String deny() {
+		SecurityContext context = SecurityContextHolder.getContext();
+		Authentication authentication = context.getAuthentication();
+		return "권한이 적절하지 못함[" + authentication + "]\n";
+	}
+
 }
