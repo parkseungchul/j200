@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+- DEPT -
+<table th:border="1">
+      <tr>
+        <th>부서 번호</th>
+        <th>부서 이름</th>
+        <th>부서 위치</th>
+      </tr>
+     <tr>
+        <td th:text="${dept.deptNo}"/>
+        <td th:text="${dept.dName}"/>
+        <td th:text="${dept.loc}"/>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td><a th:href="@{/}" th:text="리스트"></a></td>
+        <td><a th:href="@{/deptDelete(deptNo=${dept.deptNo})}" th:text="삭제하기"></a></td>
+    </tr>
+</table>
+
+
+
+</body>
+</html>
