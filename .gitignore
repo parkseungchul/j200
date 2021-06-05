@@ -10,3 +10,6 @@
 /j205/gateway/gradle/wrapper/
 /j205/gateway/gradlew
 /j205/gateway/gradlew.bat
+/j203/target/classes/
+/j202/target/classes/
+/j201/target/classes/

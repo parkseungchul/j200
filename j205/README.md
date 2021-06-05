@@ -4,5 +4,5 @@
 - authorization code 71b3047d-9c62-4d0f-9eea-6f8e3f4d8def
 - 테스트 코드 (client_a 로 호출하였기 때문, 윈도우와 리눅스 차이 " '칟)
   - 성공 curl http://localhost:8060/api/client_a -H 'Cookie: SESSION=18d601ff-3ed0-479f-a14c-eedcedabe343'
-  - 성공 curl http://localhost:8060/api/client_a -H "Cookie: SESSION=07cdf12a-eadf-418b-9bdb-0de4fcf8e3c1"
+  - 성공 curl http://localhost:8060/api/client_a -H "Cookie: SESSION=16ed9412-6001-443b-a578-d42b5f5816af"
   - 권한 없음 curl http://localhost:8060/api/client_b -H 'Cookie: SESSION=71b3047d-9c62-4d0f-9eea-6f8e3f4d8def'
