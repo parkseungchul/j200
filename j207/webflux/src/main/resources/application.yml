@@ -1,0 +1,14 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: webflux
+  thymeleaf:
+    cache: false
+    reactive:
+      max-chunk-size: 8192
+
+logging:
+  level:
+    root: info
+    com.psc.sample: debug

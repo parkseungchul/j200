@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>web</title>
+</head>
+<body>
+HI
+<hr>
+<span th:text="${defaultDto.msg}"></span>
+<span th:text="${defaultDto.result}"></span>
+<hr>
+<div th:each="value : ${defaultDto.stringFlux}">
+  <span th:text="${value}"></span>
+</div>
+
+</body>
+</html>

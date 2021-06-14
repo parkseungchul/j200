@@ -1,0 +1,10 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: web
+
+logging:
+  level:
+    root: info
+    com.psc.sample: debug
