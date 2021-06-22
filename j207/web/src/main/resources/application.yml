@@ -3,7 +3,11 @@ server:
 spring:
   application:
     name: web
-
+  data:
+    mongodb:
+      host: 192.168.100.100
+      port: 27017
+      database: web
 logging:
   level:
     root: info

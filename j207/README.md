@@ -4,3 +4,7 @@
 
 docker run -i loadimpact/k6 run --vus 10 --duration 30s - <web.js
 docker run -i loadimpact/k6 run --vus 10 --duration 30s - <webflux.js
+
+docker run -d --rm --name mongoDB \
+-p 27017:27017 \
+mongo

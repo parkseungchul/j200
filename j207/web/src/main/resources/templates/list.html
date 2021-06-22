@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>web</title>
+</head>
+<body>
+
+<table th:border="1">
+  <th>
+  <tr>
+    <td>부서 번호</td>
+    <td>부서 이름</td>
+    <td>부서 위치</td>
+    <td>삭제</td>
+  </tr>
+    </th>
+  <tbody>
+  <tr th:each="dept : ${list}">
+    <td th:text="${dept.deptNo}"></td>
+    <td th:text="${dept.dName}"></td>
+    <td th:text="${dept.loc}"></td>
+    <td><a th:href="@{/delete(deptNo=${dept.deptNo})}">삭제</a></td>
+  </tr>
+  </tbody>
+
+</table>
+
+<hr>
+
+<a th:href="@{addView}">추가</a>
+
+</body>
+</html>

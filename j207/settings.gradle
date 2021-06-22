@@ -1,2 +1,3 @@
-rootProject.name = 'j207'
+include ':web'
+include ':webflux'
 
