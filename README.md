@@ -70,3 +70,14 @@
 ### Spring WebFlux Code
 ### String MVC Code
 ### K6성능로 성능 테스트
+#
+#
+#
+# J208. RabbitMQ + Spring Boot
+## [youtube link] (https://youtu.be/80y2C54KPxg)
+## [Source] (https://github.com/parkseungchul/j200/tree/master/j208)
+### 강의 내용
+### RabbitMQ 설치
+### 문자열 주고 받기
+### 객체 주고 받기
+### 객체 주고 받고 주고 받기 (엥?)
