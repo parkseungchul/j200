@@ -20,3 +20,10 @@
 /j207/gradle/wrapper/
 /j207/gradlew
 /j207/gradlew.bat
+/j201/target/test-classes/com/psc/j201/
+/j202/target/test-classes/com/psc/j202/
+/j203/target/test-classes/com/psc/j203/
+/j208/.gradle/
+/j208/gradle/wrapper/
+/j208/gradlew
+/j208/gradlew.bat
