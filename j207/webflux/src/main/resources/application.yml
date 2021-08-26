@@ -1,14 +1,17 @@
 server:
-  port: 8080
+  port: 8082
 spring:
   application:
-    name: webflux
-  thymeleaf:
-    cache: false
-    reactive:
-      max-chunk-size: 8192
-
+    name: web
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: mongoDB
+  jpa:
+    show-sql: true
 logging:
   level:
-    root: info
-    com.psc.sample: debug
+    root: INFO
+    com.psc.sample: DEBUG
+    org.springframework.data.mongodb.core.MongoTemplate: DEBUG

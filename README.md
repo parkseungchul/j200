@@ -63,7 +63,7 @@
 #
 #
 #
-# J207. springBoot 에 APM 연결하기
+# J207. Spring WebFlux vs Spring MVC and K6 load testing(.feat Thymeleaf 적용 했다구...)
 ## [youtube link] (https://youtu.be/qBq1ky5c9Eo)
 ## [Source] (https://github.com/parkseungchul/j200/tree/master/j207)
 ### Why WebFlux

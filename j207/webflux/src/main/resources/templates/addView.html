@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>add</title>
+</head>
+<body>
+
+<form th:action="@{/add}" th:method="get">
+<table th:border="1">
+  <tr>
+    <td>부서 번호</td><td><input type="text" name="deptNo"></td>
+  </tr>
+  <tr>
+    <td>부서 이름</td><td><input type="text" name="dName"></td>
+  </tr>
+  <tr>
+    <td>부서 위치</td><td><input type="text" name="loc"></td>
+  </tr>
+  <tr>
+    <td colspan="2"><input type="submit"></td>
+  </tr>
+</table>
+
+</form>
+
+
+</body>
+</html>

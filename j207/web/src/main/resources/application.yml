@@ -5,9 +5,11 @@ spring:
     name: web
   data:
     mongodb:
-      host: 192.168.100.100
+      host: localhost
       port: 27017
-      database: web
+      database: mongoDB
+  profiles:
+    active: dev
 logging:
   level:
     root: info
