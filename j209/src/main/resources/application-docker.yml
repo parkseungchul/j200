@@ -1,0 +1,6 @@
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/
+  datasource:
+    url: jdbc:mysql://mysqlDB/j209_db
+

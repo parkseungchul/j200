@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: j209
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:mysql://localhost:3306/j209_db
+    username: user01
+    password: user01
+    hikari:
+      initializationFailTimeout: 60000
+
+logging:
+  level:
+    root: info
+    com.psc.j209: debug
