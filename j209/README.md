@@ -36,6 +36,9 @@ ENTRYPOINT ["java", "-jar", "/app.jar"]</code></pre>
 5. 운영 docker 를 운영할 경우 되도록 포트를 열지 마세요.
   - docker network create j209_net 를 구성하여 사용
 
+6. build.gradle 에 백업 jar 옵션을 변경
+  - 기본 설정으로 빌드할 경우 이전 jar 파일이 남아 Dockerfile 에서 jar 파일을 선택해야 가져와야 되는 불필요한 코딩 방지 
+
 <pre><code>개발 
 docker run -d --name mysqlDB \
     -e MYSQL_DATABASE=j209_db \
