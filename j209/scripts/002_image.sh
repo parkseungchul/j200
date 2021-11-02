@@ -1,2 +1,4 @@
-cd ../
-docker build -t j209_image .
+. ./000_SET_ENV
+
+cd ..
+docker build -t ${IMAGE} .
