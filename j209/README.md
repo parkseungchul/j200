@@ -15,7 +15,10 @@ EXPOSE 8080
 ADD ./build/libs/*.jar app.jar
 
 ENTRYPOINT ["java", "-jar", "/app.jar"]</code></pre>
-
+  - gradle.build 에 빌드 후에 예전 빌드 파일이 남지 않도록 세팅함
+<pre><code>jar {
+    enabled = false
+}</code></pre>
 3. 운영 되는 곳 마다 적용되는 프로파일을 다른게 만들자
   - 기본은 application.yml 이며 내부에서 --- 태그 보다는 환경 별로 파일을 만드는 것이 더 직관적
   - jar 직접 실행 시
