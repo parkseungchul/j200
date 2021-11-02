@@ -1,6 +1,6 @@
 FROM openjdk:11
 
-EXPOSE 8080
+EXPOSE ${SPRINGBOOT_PORT}
 
 ADD ./build/libs/*.jar app.jar
 
