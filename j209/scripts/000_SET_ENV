@@ -14,7 +14,7 @@ export DOCKER_DB_PORT=3306
 export MYSQL_ROOT_PASSWORD=password
 
 #DB_RUN.sh -> local machine 참고
-export LOCAL_DB_PATH=/Users/seungchulpark/APP/db/mysql
+export LOCAL_DB_PATH=/build/DB/mysql
 
 #APP_RUN.sh -> application-docker.yml 동작
 SPRING_PROFILES_ACTIVE=docker
