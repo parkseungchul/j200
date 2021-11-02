@@ -3,7 +3,7 @@
   - thymeleaf prefix 설정을 추가해야 함 
 <pre><code>spring:
   thymeleaf:
-    prefix: classpath:/templates/</code></pre>
+    prefix: classpath:/templates</code></pre>
 
 2. 운영에 배포 되는 도커 이미지 생성 전략 
   - 소스 빌드는 로컬에서 실행, 운영은 docker 에서 실행
