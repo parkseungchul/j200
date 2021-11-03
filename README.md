@@ -6,7 +6,6 @@
 ### 1. YML File separation each Area
 ### 2. How to allocate a variable
 ### 3. Method called when application starts
-
 ### 4. How to allocate variables
 ### 5. How to active a profile by parameter
 ### 6. YML file priority  
@@ -44,8 +43,8 @@
 #
 #
 # J205. OAuth2 + Gateway + JWT + keycloak + Security
-## [youtube link] (https://youtu.be/HOmIz9qntCo)
-## [Source] (https://github.com/parkseungchul/j200/tree/master/j205)
+## [youtube link] (https://www.youtube.com/watch?v=HOmIz9qntCo&list=PLogzC_RPf25FXvkWEK4IafUylvWCkPI8i&index=5)
+## [Source] (https://github.com/parkseungchul/j200/tree/master/j205/biz)
 ### OAuth2
 ### Keycloak 설정
 ### 빌드 환경 구성
@@ -54,17 +53,18 @@
 ### curl 테스트
 #
 #
-# J206. springBoot 에 APM 연결하기
-## [youtube link] (https://youtu.be/2TOqvxz-kO8)
-## [Source] (https://github.com/parkseungchul/j200/tree/master/j206)
+#
+# J205-2. OAuth2 + Gateway + JWT + keycloak + Security (.feat webflux )
+## [youtube link] (https://www.youtube.com/watch?v=qt6wRvWrkZk&list=PLogzC_RPf25FXvkWEK4IafUylvWCkPI8i&index=6)
+## [Source] (https://github.com/parkseungchul/j200/tree/master/j205/biz2)
 ### APM
 ### Spring Code 
 ### Scouter 연동
 #
 #
 #
-# J207. Spring WebFlux vs Spring MVC and K6 load testing(.feat Thymeleaf 적용 했다구...)
-## [youtube link] (https://youtu.be/qBq1ky5c9Eo)
+# J206. Spring WebFlux vs Spring MVC and K6 load testing(.feat Thymeleaf 적용 했다구...)
+## [youtube link] (https://www.youtube.com/watch?v=qBq1ky5c9Eo&list=PLogzC_RPf25FXvkWEK4IafUylvWCkPI8i&index=7)
 ## [Source] (https://github.com/parkseungchul/j200/tree/master/j207)
 ### Why WebFlux
 ### Spring WebFlux Code
@@ -73,8 +73,15 @@
 #
 #
 #
+# J207. H2, Thymeleaf 기본 샘플
+## 
+## 
+### 강의 없음
+#
+#
+#
 # J208. RabbitMQ + Spring Boot
-## [youtube link] (https://youtu.be/80y2C54KPxg)
+## [youtube link] (https://www.youtube.com/watch?v=80y2C54KPxg&list=PLogzC_RPf25FXvkWEK4IafUylvWCkPI8i&index=8)
 ## [Source] (https://github.com/parkseungchul/j200/tree/master/j208)
 ### RabbitMQ 설치
 ### 문자열 주고 받기
@@ -83,7 +90,28 @@
 #
 #
 #
-# J209. 인프라 전개를 위한 안내서 Dockerfile, docker-compose
+# J209. Spring webflux + Thymeleaf
+## [youtube link] (https://www.youtube.com/watch?v=6zyntdUEq3Q&list=PLogzC_RPf25FXvkWEK4IafUylvWCkPI8i&index=9)
+## [Source] (https://github.com/parkseungchul/j200/tree/master/j209)
+### 개발 환경 구성
+### docker 환경 구성
+### docker-compose 환경 구성
+#
+#
+#
+# J210. Spring webflux + MongoDB (.feat 이거 한방이면 웹 플럭스 컷!!!)
+## [youtube link] (https://www.youtube.com/watch?v=dk91mO_stQc&list=PLogzC_RPf25FXvkWEK4IafUylvWCkPI8i&index=10)
+## [Source] (https://github.com/parkseungchul/j200/tree/master/j210)
+### Build 환경 구성
+### Repository 개발
+### 메인 화면 개발
+### Service 개발
+### Controller 개발
+### 테스트
+#
+#
+#
+# J211. 인프라 전개를 위한 안내서 Dockerfile, docker-compose
 ## [youtube link] ( )
 ## [Source] (https://github.com/parkseungchul/j200/tree/master/j209)
 ### 개발 환경 구성 

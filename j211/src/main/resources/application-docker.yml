@@ -2,5 +2,5 @@ spring:
   thymeleaf:
     prefix: classpath:/templates
   datasource:
-    url: jdbc:mysql://j209_db/j209_schema
+    url: jdbc:mysql://j211_db/j211_schema
 

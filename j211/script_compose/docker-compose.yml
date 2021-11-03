@@ -2,13 +2,13 @@ version: '3.4'
 
 services:
   web:
-    image: j209_web_image
+    image: j211_web_image
     networks:
-      - j209_net
+      - j211_net
     ports:
       - "80:80"
     links:
-      - was:j209
+      - was:j211
     entrypoint:
       - "nginx"
       - "-g"
@@ -16,13 +16,13 @@ services:
     depends_on:
       - was
   was:
-    image: j209_app_image
+    image: j211_app_image
     networks:
-      - j209_net
+      - j211_net
     environment:
       - SPRING_PROFILES_ACTIVE=docker
     links:
-      - db:j209_db
+      - db:j211_db
     entrypoint:
       - "java"
       - "-jar"
@@ -33,9 +33,9 @@ services:
   db:
     image: mysql
     networks:
-      - j209_net
+      - j211_net
     environment:
-      - MYSQL_DATABASE=j2090_schema
+      - MYSQL_DATABASE=j211_schema
       - MYSQL_USER=user01
       - MYSQL_PASSWORD=user01
       - MYSQL_ROOT_PASSWORD=password
@@ -45,7 +45,7 @@ services:
       - "3306:3306"
 
 networks:
-  j209_net:
+  j211_net:
 
   
 

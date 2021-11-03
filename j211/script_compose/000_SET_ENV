@@ -1,5 +1,5 @@
 # 어플리케이션 이름
-export APP=j209
+export APP=j211
 
 # 스프링부트에서 사용하는 포트
 # .yml 의 server.port 정보와 동일
@@ -15,8 +15,8 @@ export MYSQL_ROOT_PASSWORD=password
 
 # DB_RUN.sh 에서 DB schema 정보 저장 위치
 # 컨테이너가 삭제되더라도 데이터를 유지할 수 있는 효과
-#export LOCAL_DB_PATH=/build/DB/mysql
-export LOCAL_DB_PATH=/Users/seungchulpark/APP/db/mysql
+export LOCAL_DB_PATH=/build/DB/mysql
+#export LOCAL_DB_PATH=/Users/seungchulpark/APP/db/mysql
 
 # APP_RUN.sh 에서 springboot 적용 profile 정의
 # 다수개를 사용할 경우 docker, ssh 와 같은 방식으로 사용
