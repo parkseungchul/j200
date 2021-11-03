@@ -1,0 +1,51 @@
+version: '3.4'
+
+services:
+  web:
+    image: j209_web_image
+    networks:
+      - j209_net
+    ports:
+      - "80:80"
+    links:
+      - was:j209
+    entrypoint:
+      - "nginx"
+      - "-g"
+      - "daemon off;"
+    depends_on:
+      - was
+  was:
+    image: j209_app_image
+    networks:
+      - j209_net
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    links:
+      - db:j209_db
+    entrypoint:
+      - "java"
+      - "-jar"
+      - "-Duser.timezone=Asia/Seoul"
+      - "/app.jar"
+    depends_on:
+      - db
+  db:
+    image: mysql
+    networks:
+      - j209_net
+    environment:
+      - MYSQL_DATABASE=j2090_schema
+      - MYSQL_USER=user01
+      - MYSQL_PASSWORD=user01
+      - MYSQL_ROOT_PASSWORD=password
+    volumes:
+      - /Users/seungchulpark/APP/db/mysql:/var/lib/mysql
+    ports:
+      - "3306:3306"
+
+networks:
+  j209_net:
+
+  
+

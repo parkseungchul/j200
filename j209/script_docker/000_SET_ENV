@@ -1,0 +1,57 @@
+# 어플리케이션 이름
+export APP=j209
+
+# 스프링부트에서 사용하는 포트
+# .yml 의 server.port 정보와 동일
+export SPRINGBOOT_PORT=8080
+
+# DB_RUN.sh 에서 사용 되는 DB 기본 정보
+# .yml 의 spring.database 정보와 동일
+export MYSQL_DATABASE=${APP}_schema
+export MYSQL_USER=user01
+export MYSQL_PASSWORD=user01
+export DOCKER_DB_PORT=3306
+export MYSQL_ROOT_PASSWORD=password
+
+# DB_RUN.sh 에서 DB schema 정보 저장 위치
+# 컨테이너가 삭제되더라도 데이터를 유지할 수 있는 효과
+#export LOCAL_DB_PATH=/build/DB/mysql
+export LOCAL_DB_PATH=/Users/seungchulpark/APP/db/mysql
+
+# APP_RUN.sh 에서 springboot 적용 profile 정의
+# 다수개를 사용할 경우 docker, ssh 와 같은 방식으로 사용
+SPRING_PROFILES_ACTIVE=docker
+
+# WEB_RUN.sh 에서 외부에서 접근하는 포트를 정의
+DOCKER_WEB_PORT=80
+
+########## ########## ##########
+
+# 어플리케이션 이미지 이름
+export APP_IMAGE=${APP}_app_image
+
+# 웹서버 이미지 이름
+export WEB_IMAGE=${APP}_web_image
+
+# 도커에서 불리는 어플리케이션 이름
+DOCKER_APP=${APP}
+
+# 도커에서 불리는 디비 이름
+export DOCKER_DB=${APP}_db
+
+# 도커에서 불리는 웹서버 이름
+export DOCKER_WEB=${APP}_web
+
+# network between nginx and springboot and db
+export APP_NETWORK=${APP}_net
+
+# name of springboot in docker
+export DOCKER_WAS=${APP}
+
+
+
+
+
+
+
+

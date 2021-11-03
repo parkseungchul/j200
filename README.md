@@ -83,7 +83,7 @@
 #
 #
 #
-# J209. Spring Boot + docker + mysql 개발, 운영 환경  
+# J209. 인프라 전개를 위한 안내서 Dockerfile, docker-compose
 ## [youtube link] ( )
 ## [Source] (https://github.com/parkseungchul/j200/tree/master/j209)
 ### 개발 환경 구성 
