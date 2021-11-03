@@ -11,6 +11,7 @@ docker run -d --name ${DOCKER_DB} \
 
 echo "===================="
 echo "db schema script"
-echo "docker exec -it ${DOCKER_DB} bash"
-echo "grant all privileges on ${DOCKER_DB_SCHEMA}.* to 'user01'@'%';"
+echo "docker exec -it " ${DOCKER_DB} " bash"
+echo "grant all privileges on "${DOCKER_DB_SCHEMA}.* to" 'user01'@'%';"
 echo "===================="
+
