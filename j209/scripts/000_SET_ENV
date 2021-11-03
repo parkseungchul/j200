@@ -14,7 +14,8 @@ export DOCKER_DB_PORT=3306
 export MYSQL_ROOT_PASSWORD=password
 
 #DB_RUN.sh -> local machine 참고
-export LOCAL_DB_PATH=/Users/seungchulpark/APP/db/mysql
+export LOCAL_DB_PATH=/build/DB/mysql
+#export LOCAL_DB_PATH=/Users/seungchulpark/APP/db/mysql
 
 #APP_RUN.sh -> application-docker.yml 동작
 SPRING_PROFILES_ACTIVE=docker
@@ -26,8 +27,8 @@ DOCKER_SPRINGBOOT_PORT=8080
 DOCKER_WEB_PORT=80
 
 #WEB_RUN.sh ->
-DEFAULT_CONF_DIR=/Users/seungchulpark/github/parkseungchul/j200/j209/scripts
-
+DEFAULT_CONF_DIR=/build/SRC/j200/j209/scripts
+#DEFAULT_CONF_DIR=/Users/seungchulpark/github/parkseungchul/j200/j209/scripts
 ########## ########## ##########
 
 # image name
