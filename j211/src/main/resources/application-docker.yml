@@ -1,6 +1,4 @@
 spring:
-  thymeleaf:
-    prefix: classpath:/templates
   datasource:
     url: jdbc:mysql://j211_db/j211_schema
 

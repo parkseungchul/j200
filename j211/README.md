@@ -64,6 +64,6 @@ docker run -d  --name mysqlDB \
     mysql
 
 운영 DOCKER DB Script 폴더 참고
-create schema j209_db;
-grant all privileges on j209_db.* to 'user01'@'%';
+create schema j211_schema;
+grant all privileges on j211_schema.* to 'user01'@'%';
 </code></pre>

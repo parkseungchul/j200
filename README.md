@@ -45,21 +45,19 @@
 # J205. OAuth2 + Gateway + JWT + keycloak + Security
 ## [youtube link] (https://www.youtube.com/watch?v=HOmIz9qntCo&list=PLogzC_RPf25FXvkWEK4IafUylvWCkPI8i&index=5)
 ## [Source] (https://github.com/parkseungchul/j200/tree/master/j205/biz)
-### OAuth2
-### Keycloak 설정
-### 빌드 환경 구성
-### biz 소스 만들기
-### gateway 소스 만들기
-### curl 테스트
+### (00:00) OAuth2
+### (02:11) Keycloak 설정
+### (07:18) 빌드 환경 구성
+### (21:30) biz 소스 만들기
+### (31:35) gateway 소스 만들기
+### (38:29) curl 테스트
 #
 #
 #
 # J205-2. OAuth2 + Gateway + JWT + keycloak + Security (.feat webflux )
 ## [youtube link] (https://www.youtube.com/watch?v=qt6wRvWrkZk&list=PLogzC_RPf25FXvkWEK4IafUylvWCkPI8i&index=6)
 ## [Source] (https://github.com/parkseungchul/j200/tree/master/j205/biz2)
-### APM
-### Spring Code 
-### Scouter 연동
+### Resource 가 webflux 기반일 때  어떻게 연동하지 보자.
 #
 #
 #
@@ -93,9 +91,9 @@
 # J209. Spring webflux + Thymeleaf
 ## [youtube link] (https://www.youtube.com/watch?v=6zyntdUEq3Q&list=PLogzC_RPf25FXvkWEK4IafUylvWCkPI8i&index=9)
 ## [Source] (https://github.com/parkseungchul/j200/tree/master/j209)
-### 개발 환경 구성
-### docker 환경 구성
-### docker-compose 환경 구성
+### (00:00) 강의 소개
+### (01:00) Controller / Thymeleaf
+### (08:42) Service / RestController
 #
 #
 #

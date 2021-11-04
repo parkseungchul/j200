@@ -26,7 +26,7 @@ public class BaseController {
         if(deptOptional.isPresent()){
             model.addAttribute("dept", deptOptional.get());
         }
-        return "/index";
+        return "index";
     }
 
 }

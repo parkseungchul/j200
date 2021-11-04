@@ -1,16 +1,15 @@
 spring:
   application:
-    name: j209
+    name: j211
   jpa:
     hibernate:
       ddl-auto: update
   datasource:
-    url: jdbc:mysql://192.168.100.100:3306/j211_schema
+    url: jdbc:mysql://localhost:3306/j211_schema
     username: user01
     password: user01
     hikari:
       initializationFailTimeout: 60000
-
 logging:
   level:
     root: info
