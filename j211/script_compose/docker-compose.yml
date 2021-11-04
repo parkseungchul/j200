@@ -40,7 +40,7 @@ services:
       - MYSQL_PASSWORD=user01
       - MYSQL_ROOT_PASSWORD=password
     volumes:
-      - /build/DB/mysql:/var/lib/mysql
+      - /Users/seungchulpark/APP/db/mysql:/var/lib/mysql
     ports:
       - "3306:3306"
 
