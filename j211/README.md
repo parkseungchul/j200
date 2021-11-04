@@ -55,25 +55,15 @@ docker run -d --name ${name} \
 
 <pre><code>
 개발 
-docker run -d --name mysqlDB \
-    -e MYSQL_DATABASE=j209_db \
+docker run -d  --name mysqlDB \
+    -e MYSQL_DATABASE=j211_schema \
     -e MYSQL_USER=user01 \
     -e MYSQL_PASSWORD=user01 \
     -e MYSQL_ROOT_PASSWORD=password \
     -p 3306:3306 \
-    -v /Users/seungchulpark/APP/db/mysql:/var/lib/mysql \
     mysql
 
-운영
-docker run -d --name mysqlDB \
-    --network j209_net \
-    -e MYSQL_DATABASE=j209_db \
-    -e MYSQL_USER=user01 \
-    -e MYSQL_PASSWORD=user01 \
-    -e MYSQL_ROOT_PASSWORD=password \
-    -v /Users/seungchulpark/APP/db/mysql:/var/lib/mysql \
-    mysql
-
+운영 DOCKER DB Script 폴더 참고
 create schema j209_db;
 grant all privileges on j209_db.* to 'user01'@'%';
 </code></pre>
