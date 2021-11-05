@@ -1,10 +1,5 @@
 ### Springboot + docker + mysql 개발/운영 환경 
 1. Intellij 에서의 테스트와 jar 파일 상태에서의 테스트의 다른 점 확인
-  - thymeleaf prefix 설정을 추가해야 함 
-<pre><code>spring:
-  thymeleaf:
-    prefix: classpath:/templates</code></pre>
-
 2. 운영에 배포 되는 도커 이미지 생성 전략 
   - 소스 빌드는 로컬에서 실행, 운영은 docker 에서 실행
   - docker container 에서 최대한 작업은 단순하게 구성 (절대로 빌드 하지 마세요.)
