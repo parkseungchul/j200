@@ -110,8 +110,12 @@
 #
 #
 # J211. 인프라 전개를 위한 안내서 Dockerfile, docker-compose
-## [youtube link] ( )
-## [Source] (https://github.com/parkseungchul/j200/tree/master/j209)
-### 개발 환경 구성 
-### docker 환경 구성 
-### docker-compose 환경 구성
+## [youtube link] (https://www.youtube.com/watch?v=cj061SpRTCE&list=PLogzC_RPf25FXvkWEK4IafUylvWCkPI8i&index=11)
+## [Source] (https://github.com/parkseungchul/j200/tree/master/j211)
+### (00:00) 강의 안내
+### (00:38) JPA, JUnit은 H2
+### (10:53) Mysql, Controller, UI 구성
+### (27:05) docker Script 구성
+### (37:55) docker 배포 테스트
+### (41:42) docker-compose Script 구성
+### (46:04) docker-compose 배포 테스트
