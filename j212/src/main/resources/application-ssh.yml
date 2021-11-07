@@ -8,5 +8,7 @@ server:
     trust-store-password: ccie6198
   port: 443
 
+
+
 custom:
   area: ssh
