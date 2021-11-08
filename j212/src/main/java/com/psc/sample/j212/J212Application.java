@@ -37,7 +37,11 @@ public class J212Application {
     public ServletWebServerFactory servletContainer() {
         TomcatServletWebServerFactory tomcat = null;
 
-        if(area.equals("ssh")){
+        if(area.equals("multi")){
+            tomcat = new TomcatServletWebServerFactory();
+        }else if(area.equals("forward")){
+            tomcat = new TomcatServletWebServerFactory();
+        }else{
             tomcat  = new TomcatServletWebServerFactory() {
                 @Override
                 protected void postProcessContext(Context context) {
@@ -49,12 +53,8 @@ public class J212Application {
                     context.addConstraint(securityConstraint);
                 }
             };
-        }else{
-            tomcat = new TomcatServletWebServerFactory();
         }
         tomcat.addAdditionalTomcatConnectors(createStandardConnector());
-
-
         return tomcat;
     }
 
@@ -62,13 +62,19 @@ public class J212Application {
         Connector connector =
                 new Connector("org.apache.coyote.http11.Http11NioProtocol");
 
-        if(area.equals("ssh")){
+        if(area.equals("multi")){
+            // 추가 포트
+            connector.setPort(8080);
+        }else if(area.equals("forward")){
+            // 기존 포트
+            connector.setPort(8080);
+            // 변경 포트
+            connector.setRedirectPort(80);
+        }else{
             connector.setScheme("http");
             connector.setSecure(false);
             connector.setPort(80);
             connector.setRedirectPort(443);
-        }else{
-            connector.setPort(80);
         }
 
         return connector;

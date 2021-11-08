@@ -1,4 +1,5 @@
 server:
+  port: 443
   ssl:
     enabled: true
     key-store: file:/Users/seungchulpark/github/parkseungchul/j200/j212/src/main/resources/springcloud.pfx
@@ -6,9 +7,8 @@ server:
     key-store-type: PKCS12
     trust-store: file:/Users/seungchulpark/github/parkseungchul/j200/j212/src/main/resources/trust.jks
     trust-store-password: ccie6198
-  port: 443
-
-
-
 custom:
-  area: ssh
+  area: ssl
+
+
+
