@@ -48,6 +48,8 @@ public class J212Application {
                     SecurityConstraint securityConstraint = new SecurityConstraint();
                     securityConstraint.setUserConstraint("CONFIDENTIAL");
                     SecurityCollection collection = new SecurityCollection();
+
+                    // 부분적으로 변경할 경우 여기 변경
                     collection.addPattern("/*");
                     securityConstraint.addCollection(collection);
                     context.addConstraint(securityConstraint);
