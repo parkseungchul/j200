@@ -105,8 +105,12 @@
  - [(46:04) docker-compose 배포 테스트](https://www.youtube.com/watch?v=cj061SpRTCE&list=PLogzC_RPf25FXvkWEK4IafUylvWCkPI8i&index=11&t=2764s)
 <hr>
  
-# J212. springboot multi-port, port forwarding
-## [youtube link] ()
-## [Source] ()
+#### J212. springboot multi-port, port forwarding
+#### Links: [Youtube](https://www.youtube.com/watch?v=fKE9MD1pH7E&list=PLogzC_RPf25FXvkWEK4IafUylvWCkPI8i&index=12), [Source](https://github.com/parkseungchul/j200/tree/master/j212)
+ - [(00:00) 강의 안내](https://www.youtube.com/watch?v=fKE9MD1pH7E&list=PLogzC_RPf25FXvkWEK4IafUylvWCkPI8i&index=12&t=0s)
+ - [(00:59) 멀티 포트 설정 (80, 8080)](https://www.youtube.com/watch?v=fKE9MD1pH7E&list=PLogzC_RPf25FXvkWEK4IafUylvWCkPI8i&index=12&t=59s)
+ - [(09:44) SSL 인증서 적용(443)](https://www.youtube.com/watch?v=fKE9MD1pH7E&list=PLogzC_RPf25FXvkWEK4IafUylvWCkPI8i&index=12&t=584s)
+ - [(16:22) 멀티 포트 설정 (http 80, https 443)](https://www.youtube.com/watch?v=fKE9MD1pH7E&list=PLogzC_RPf25FXvkWEK4IafUylvWCkPI8i&index=12&t=982s)
+ - [(22:18) 포트 포워드 설정 (http 80 - https 443)](https://www.youtube.com/watch?v=fKE9MD1pH7E&list=PLogzC_RPf25FXvkWEK4IafUylvWCkPI8i&index=12&t=1338s)
 
 
