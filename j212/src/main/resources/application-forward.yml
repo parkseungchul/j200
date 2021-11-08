@@ -1,7 +1,0 @@
-server:
-  port: 80
-custom:
-  area: forward
-
-
-

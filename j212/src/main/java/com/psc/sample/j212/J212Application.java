@@ -1,5 +1,6 @@
 package com.psc.sample.j212;
 
+import lombok.extern.slf4j.Slf4j;
 import org.apache.catalina.Context;
 import org.apache.catalina.connector.Connector;
 import org.apache.tomcat.util.descriptor.web.SecurityCollection;
@@ -15,10 +16,10 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+@Slf4j
 @RestController
 @SpringBootApplication
 public class J212Application {
-
 
     @Value("${custom.area}")
     private String area;
@@ -29,17 +30,16 @@ public class J212Application {
 
     @RequestMapping("/")
     public String test(){
+        log.debug("==========> " + area);
         return "IT 정답은 읎다.";
     }
-
 
     @Bean
     public ServletWebServerFactory servletContainer() {
         TomcatServletWebServerFactory tomcat = null;
-
-        if(area.equals("multi")){
+        if(area.equals("multi-port")){
             tomcat = new TomcatServletWebServerFactory();
-        }else if(area.equals("forward")){
+        }else if(area.equals("ssl")){
             tomcat = new TomcatServletWebServerFactory();
         }else{
             tomcat  = new TomcatServletWebServerFactory() {
@@ -62,21 +62,16 @@ public class J212Application {
         Connector connector =
                 new Connector("org.apache.coyote.http11.Http11NioProtocol");
 
-        if(area.equals("multi")){
-            // 추가 포트
+        if(area.equals("multi-port")){
             connector.setPort(8080);
-        }else if(area.equals("forward")){
-            // 기존 포트
-            connector.setPort(8080);
-            // 변경 포트
-            connector.setRedirectPort(80);
-        }else{
+        }else if(area.equals("ssl")){
+            connector.setPort(80);
+        }else {
             connector.setScheme("http");
             connector.setSecure(false);
             connector.setPort(80);
             connector.setRedirectPort(443);
         }
-
         return connector;
     }
 
