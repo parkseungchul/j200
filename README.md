@@ -1,7 +1,6 @@
 # Spring Boot Tips  
 <hr>
 
-
 #### J201. How to Use YUM Files to Smart
 ##### Links: [Youtube](https://www.youtube.com/watch?v=QFsFOggPXAc&list=PLogzC_RPf25FXvkWEK4IafUylvWCkPI8i&index=1), [Source](https://github.com/parkseungchul/j200/tree/master/j201)
  - [(00:00) profile 파일 환경 별로 분리하여 적용하기](https://www.youtube.com/watch?v=QFsFOggPXAc&list=PLogzC_RPf25FXvkWEK4IafUylvWCkPI8i&index=1&t=0s)
