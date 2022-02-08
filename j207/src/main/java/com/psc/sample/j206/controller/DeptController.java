@@ -18,11 +18,19 @@ public class DeptController {
         return "deptList";
     }
 
-    @RequestMapping("/dept")
+    @RequestMapping("/deptView")
     public String dept(Integer deptNo, Model model){
-        model.addAttribute("dept",deptService.getDept(deptNo));
-        return "dept";
+
+        boolean isNew = true;
+        if(deptNo != null){
+            model.addAttribute("dept",deptService.getDept(deptNo));
+            isNew = false;
+        }
+        model.addAttribute("isNew", isNew);
+        return "deptView";
     }
+
+
 
     @RequestMapping("/deptDelete")
     public String deptDelete(Integer deptNo, Model model){

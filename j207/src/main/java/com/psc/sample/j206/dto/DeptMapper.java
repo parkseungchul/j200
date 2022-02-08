@@ -9,12 +9,12 @@ import org.mapstruct.Mappings;
 public interface DeptMapper {
 
     @Mappings({
-            @Mapping(target = "dtoValue", ignore = true)
+            @Mapping(target = "dtoValue", ignore = true) // 타켓에 해당 필드 무시
     })
     Dept entityToDto(DeptEntity deptEntity);
 
     @Mappings({
-            @Mapping(target = "entityValue", ignore = true)
+            @Mapping(target = "entityValue", ignore = true)  // 타켓에 해당 필드 무시
     })
     DeptEntity dtoToEntity(Dept dept);
 }

@@ -5,18 +5,15 @@ spring:
     console:
       enabled: false
       path: /test_db
-
   datasource:
     driver-class-name: org.h2.Driver
     url: jdbc:h2:file:./test_db;AUTO_SERVER=TRUE
     username: sa
     password: sa
-
   jpa:
     hibernate:
       ddl-auto: create-drop
-
 logging:
   level:
     root: info
-    com.psc.sample.scouter: debug
+    com.psc.sample.j206: debug

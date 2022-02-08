@@ -32,7 +32,7 @@ public class J206Application {
         log.debug(" ####################### HELLO ####################### ");
 
         List<DeptEntity> deptEntityList = new ArrayList<DeptEntity>();
-        for(int i= 1; i<101; i++){
+        for(int i= 1; i<10; i++){
             Dept dept = new Dept(i ,String.valueOf(i),String.valueOf(i),String.valueOf(i));
             deptEntityList.add(deptMapper.dtoToEntity(dept));
         }

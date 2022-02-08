@@ -12,11 +12,16 @@
         <th>부서 이름</th>
         <th>부서 위치</th>
       </tr>
-     <tr>
-        <td th:text="${dept.deptNo}"/>
-        <td th:text="${dept.dName}"/>
-        <td th:text="${dept.loc}"/>
-    </tr>
+      <tr th:if="${isNew}">
+         <td><input th:name="deptNo"/></td>
+         <td><input th:name="dName" /></td>
+         <td><input th:name="loc" /></td>
+      </tr>
+      <tr th:th:unless="${isNew}">
+         <td><input th:name="deptNo" th:value="${dept.deptNo}"/></td>
+         <td><input th:name="dName" th:value="${dept.dName}"/></td>
+         <td><input th:name="loc" th:value="${dept.loc}"/></td>
+      </tr>
 </table>
 
 <table>
