@@ -1,6 +1,10 @@
 server:
   port: 80  # Spring boot Server port
 spring:
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
   h2:
     console:
       enabled: false

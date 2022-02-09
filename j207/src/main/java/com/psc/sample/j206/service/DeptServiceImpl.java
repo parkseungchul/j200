@@ -1,6 +1,7 @@
 package com.psc.sample.j206.service;
 
 
+import com.psc.sample.j206.domain.DeptEntity;
 import com.psc.sample.j206.domain.DeptRepository;
 import com.psc.sample.j206.dto.Dept;
 import com.psc.sample.j206.dto.DeptMapper;
@@ -9,6 +10,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @AllArgsConstructor
@@ -19,7 +21,13 @@ public class DeptServiceImpl implements DeptService{
 
     @Override
     public Dept getDept(Integer deptNo) {
-        return deptMapper.entityToDto(deptRepository.findById(deptNo).get());
+
+        Optional<DeptEntity> deptOptional = deptRepository.findById(deptNo);
+        if(deptOptional.isPresent()){
+            return deptMapper.entityToDto(deptOptional.get());
+        }else{
+            return null;
+        }
     }
 
     @Override
