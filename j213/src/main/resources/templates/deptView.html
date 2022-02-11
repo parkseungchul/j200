@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+- DEPT -
+<form name="dept" id="dept" method="post">
+<table th:border="1">
+    <tr>
+        <th>부서 번호</th>
+        <th>부서 이름</th>
+        <th>부서 위치</th>
+    </tr>
+
+    <span th:switch="${isNew}">
+    <tr th:case="'Y'">
+        <td><input th:name="deptNo"/></td>
+        <td><input th:name="dName"/></td>
+        <td><input th:name="loc"/></td>
+    </tr>
+    <tr th:case="'N'">
+        <td><input th:name="deptNo" th:value="${dept.deptNo}" readonly/></td>
+        <td><input th:name="dName" th:value="${dept.dName}"/></td>
+        <td><input th:name="loc" th:value="${dept.loc}"/></td>
+    </tr>
+    </span>
+</table>
+
+    <input type="hidden" name="_method"/>
+</form>
+<!--td th:case="'N'"><a th:href="@{/deptDelete(deptNo=${dept.deptNo})}" th:text="삭제하기"></a></td-->
+
+<a id="list"  class="btn">리스트</a>
+<span th:switch="${isNew}"> <!-- 새로운 거니 수정하는거니? -->
+    <span th:case="'Y'"> <!-- 새로운 생성일 경우 만들기만 있음 됨 -->
+<a id="put" class="btn">추가하기</a>
+    </span>
+    <span th:case="'N'"> <!-- 기존 수정일 경우 업데이트와 삭제 있으면 됨 -->
+<a id="update" class="btn">수정하기</a>
+<a id="del" class="btn">삭제하기</a>
+    </span>
+</span>
+
+<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script-->
+<script type="text/javascript">
+window.onload = function() {
+    // thymeleaf 변수 java script 로 넣을 때 개 빻은 방법... 후덜덜
+    /*<![CDATA[*/
+    let isNew = "[[${isNew}]]";
+    /*]]>*/
+
+    let list = document.querySelector("#list");
+    list.onclick = function () {
+        console.log("list click!");
+        location.href = "/";
+    }
+
+    // DB 전달하기 전에 파리미터 체크 공통함수.
+    function isCheck() {
+        let deptForm = document.dept;
+        // 숫자일 때만 false 리턴
+        let chkStyle = /\d/;      //정규식 체크 방식(숫자)
+        let isDeptNo = chkStyle.test(deptForm.deptNo.value);
+        console.log(deptForm.deptNo.value + " " + isDeptNo)
+        if (isDeptNo) {
+            return true;
+        } else {
+            alert("DEPT No must be a number.")
+            return false;
+        }
+    }
+
+    // 같은 데이터가 있는지 알아보는 ajax
+    // 리턴을 받아서 하려고 했지만 비동기인지 아님 모자른 FRONT 실력인지 파라미터로 넣고 처리 개 빠았음
+    function isAjax(deptForm){
+        let deptNo = deptForm.deptNo.value;
+
+        // ajax 를 통해서 입력하고자 하는 데이터가 있는 건지 조회해줌
+        let result = fetch('/dept.json?deptNo=' + deptNo, {
+            method: 'get'
+        })
+        result.then(function (response) {
+            console.log('response', response)
+            console.log('header', response.headers.get('Content-Type'))
+            return response.text();
+        }).then(function (text) {
+            console.log('got text', text);
+            result = JSON.parse(text).isExist;
+            console.log(result);
+            if(result == 'Y'){
+                alert("Exist data!");
+            }else{
+                deptForm.submit();
+            }
+        }).catch(function (ex) {
+            console.log('failed', ex)
+        });
+    }
+
+    // 신규 추가 일 때
+    if (isNew == 'Y') {
+        let put = document.querySelector("#put");
+        put.onclick = function () {
+            let deptForm = document.dept;
+            deptForm.action = "/dept";
+            deptForm._method.value = "post";
+
+            // ajax 리턴 값을 받아서 처리하려고 했지만 비동기 통신이라 생각대로 되지 않음.
+            isAjax(deptForm);
+
+        }
+    // 수정 업무 일때
+    } else {
+        let del = document.querySelector("#del");
+        del.onclick = function () {
+            console.log("del click!");
+            let deptForm = document.dept;
+            deptForm.action = "/dept";
+            deptForm._method.value = "delete";
+            if (isCheck()) {
+                deptForm.submit();
+            }
+        }
+
+        let update = document.querySelector("#update");
+        update.onclick = function () {
+            console.log("update click!");
+            let deptForm = document.dept;
+            deptForm.action = "/dept";
+            deptForm._method.value = "put";
+            if (isCheck()) {
+                deptForm.submit();
+            }
+        }
+    }
+}
+</script>
+</body>
+</html>

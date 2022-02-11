@@ -64,6 +64,7 @@
 
 #### J207. H2, Thymeleaf 기본 샘플
  - 강의 없음
+ -  참고 https://www.hanumoka.net/2020/05/21/springBoot-20200521-springboot-thymeleaf-layout-dialect/
 <hr>
 
 #### J208. RabbitMQ + Spring Boot
