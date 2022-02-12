@@ -62,11 +62,6 @@
  - [(29:10) K6 성능 테스트](https://www.youtube.com/watch?v=qBq1ky5c9Eo&list=PLogzC_RPf25FXvkWEK4IafUylvWCkPI8i&index=7&t=1750s)
 <hr>
 
-#### J207. H2, Thymeleaf 기본 샘플
- - 강의 없음
- -  참고 https://www.hanumoka.net/2020/05/21/springBoot-20200521-springboot-thymeleaf-layout-dialect/
-<hr>
-
 #### J208. RabbitMQ + Spring Boot
 #### Links: [Youtube](https://www.youtube.com/watch?v=80y2C54KPxg&list=PLogzC_RPf25FXvkWEK4IafUylvWCkPI8i&index=8), [Source](https://github.com/parkseungchul/j200/tree/master/j208)
  - [(00:00) 강의 내용](https://www.youtube.com/watch?v=80y2C54KPxg&list=PLogzC_RPf25FXvkWEK4IafUylvWCkPI8i&index=8&t=0s)
@@ -112,5 +107,15 @@
  - [(09:44) SSL 인증서 적용(443)](https://www.youtube.com/watch?v=fKE9MD1pH7E&list=PLogzC_RPf25FXvkWEK4IafUylvWCkPI8i&index=12&t=584s)
  - [(16:22) 멀티 포트 설정 (http 80, https 443)](https://www.youtube.com/watch?v=fKE9MD1pH7E&list=PLogzC_RPf25FXvkWEK4IafUylvWCkPI8i&index=12&t=982s)
  - [(22:18) 포트 포워드 설정 (http 80 - https 443)](https://www.youtube.com/watch?v=fKE9MD1pH7E&list=PLogzC_RPf25FXvkWEK4IafUylvWCkPI8i&index=12&t=1338s)
+<hr>
 
-
+#### J213. Spring Boot Template v 1.0 (개발을 위한 최소 스펙)
+#### Links: [Youtube](https://www.youtube.com/watch?v=QP-yLn_gMEg&list=PLogzC_RPf25FXvkWEK4IafUylvWCkPI8i&index=13), [Source](https://github.com/parkseungchul/j200/tree/master/j213)
+ - [(00:00) 강의 내용]
+ - [(01:26) Domain]
+ - [(09:52) Mapper]
+ - [(16:59) Service]
+ - [(19:51) Service]
+ - [(25:55) Thymeleaf]
+ - [(35:18) Layout]
+<hr>

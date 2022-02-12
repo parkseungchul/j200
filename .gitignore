@@ -30,3 +30,5 @@
 /j206/.gradle/
 /j206/gradlew
 /j206/gradlew.bat
+/img.png
+/test_db.mv.db

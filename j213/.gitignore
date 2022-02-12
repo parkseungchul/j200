@@ -37,3 +37,6 @@ out/
 .vscode/
 /gradlew
 /gradlew.bat
+/gradle/wrapper/
+/test_db.mv.db
+/test_db.trace.db
