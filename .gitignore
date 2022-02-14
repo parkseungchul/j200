@@ -32,3 +32,4 @@
 /j206/gradlew.bat
 /img.png
 /test_db.mv.db
+/test_db.lock.db
