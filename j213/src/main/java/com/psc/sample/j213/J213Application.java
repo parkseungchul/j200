@@ -17,13 +17,13 @@ import java.util.List;
 @Slf4j
 @SpringBootApplication
 @AllArgsConstructor
-public class J206Application {
+public class J213Application {
 
-    DeptRepository deptRepository;
     DeptMapper deptMapper;
+    DeptRepository deptRepository;
 
     public static void main(String[] args) {
-        SpringApplication.run(J206Application.class, args);
+        SpringApplication.run(J213Application.class, args);
     }
 
     @EventListener(ApplicationReadyEvent.class)

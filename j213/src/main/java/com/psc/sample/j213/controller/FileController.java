@@ -27,7 +27,7 @@ public class FileController {
 
     @RequestMapping(value = {"/fileView"}, method = RequestMethod.GET)
     public String file(Model model){
-        model.addAttribute("results", utility.cmdReturn("dir", "ls"));
+        model.addAttribute("results", utility.cmdReturn("dir/b", "ls"));
         return "file";
     }
 

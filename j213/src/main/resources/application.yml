@@ -1,6 +1,6 @@
 server:
   port: 80  # Spring boot Server port
-  path: /Users/seungchulpark/test
+  path: D:\TEST
 spring:
   servlet:
     multipart:
