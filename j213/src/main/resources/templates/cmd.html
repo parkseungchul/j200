@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>cmd</title>
+</head>
+<body>
+- CMD -
+<table th:border="1">
+    <tr th:each="result : ${results}">
+        <td th:text="${result}"/>
+    </tr>
+</table>
+</body>
+</html>

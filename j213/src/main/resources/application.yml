@@ -20,4 +20,4 @@ spring:
 logging:
   level:
     root: info
-    com.psc.sample.j206: debug
+    com.psc.sample: debug

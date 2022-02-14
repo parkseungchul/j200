@@ -34,6 +34,10 @@ dependencies {
 
     implementation('nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect')
 
+    implementation group: 'commons-fileupload', name: 'commons-fileupload', version: '1.4'
+    implementation group: 'commons-io', name: 'commons-io', version: '2.11.0'
+
+
     implementation("org.mapstruct:mapstruct:${mapstructVersion}")
     compileOnly "org.mapstruct:mapstruct-processor:${mapstructVersion}"
     annotationProcessor "org.mapstruct:mapstruct-processor:${mapstructVersion}"
