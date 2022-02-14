@@ -1,6 +1,11 @@
 server:
   port: 80  # Spring boot Server port
+  path: /Users/seungchulpark/test
 spring:
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
   mvc:
     hiddenmethod:
       filter:

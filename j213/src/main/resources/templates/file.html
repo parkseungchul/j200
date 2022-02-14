@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>file</title>
+</head>
+<body>
+- FILE LIST -
+<table th:border="1">
+    <span th:each="result : ${results}">
+    <tr>
+        <td><a th:href="@{/file(fileName=${result},del='N')}" th:text="${result}"></a></td>
+        <td><a th:href="@{/file(fileName=${result},del='Y')}" th:text='삭제'></td>
+    </tr>
+    </span>
+</table>
+- FILE -
+<form th:name="file" th:method="post" th:action="@{/file}" enctype="multipart/form-data">
+    <input type="file" id="files" name="files" multiple="multiple">
+    <input type="submit" id="submit" value="저장" class="btn">
+</form>
+</body>
+</html>
