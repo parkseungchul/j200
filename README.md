@@ -119,3 +119,10 @@
  - [(25:55) Thymeleaf]
  - [(35:18) Layout]
 <hr>
+
+#### J214. OS Command, File Control (spring boot)
+#### Links: [Youtube](https://www.youtube.com/watch?v=gJqJGKFzGms&list=PLogzC_RPf25FXvkWEK4IafUylvWCkPI8i&index=14), [Source](https://github.com/parkseungchul/j200/tree/master/j213)
+ - [(00:00)] 강의 내용
+ - [(00:43)] OS Command 수행하고 결과 보기
+ - [(11:12)]  File Control
+<hr>

@@ -23,13 +23,13 @@ public class CmdController {
     @RequestMapping("/cmd")
     public String cmd(Model model){
         String s;
-        Process p;
+        Process p = null;
         List<String> results = new ArrayList<String>();
         try {
             String[] cmd = null;
             String encoding = null;
             if(utility.isWin()){
-                cmd = new String[]{"cmd","/c","dir"};
+                cmd = new String[]{"cmd","/c","dir/s"};
                 encoding = "EUC-KR";
             }else{
                 cmd = new String[]{"/bin/sh", "-c", "ls -al"};
@@ -41,11 +41,17 @@ public class CmdController {
                 log.debug(s);
                 results.add(s);
             }
-            p.waitFor();
-            System.out.println("exit: " + p.exitValue());
-            p.destroy();
+
         } catch (Exception e) {
             e.printStackTrace();
+        }finally {
+            try {
+                p.waitFor();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println("exit: " + p.exitValue());
+            p.destroy();
         }
         model.addAttribute("results", results);
         return "cmd";

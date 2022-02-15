@@ -69,13 +69,15 @@ public class Utility {
         while(iterator.hasNext()){
             List<MultipartFile> list = multipartHttpServletRequest.getFiles(iterator.next());
             for (MultipartFile multipartFile : list){
-                if(multipartFile.isEmpty() == false){
+               if(multipartFile.isEmpty() == false){ // input 빈 박스 체크
                     contentType = multipartFile.getContentType();
-                    if(ObjectUtils.isEmpty(contentType)){
+                    if(ObjectUtils.isEmpty(contentType)){ // null 파일 체크
                         break;
                     }
                     File file = new File(path + "/" + multipartFile.getOriginalFilename());
                     multipartFile.transferTo(file);
+                }else{
+                   log.error("File not exist!");
                 }
             }
         }
