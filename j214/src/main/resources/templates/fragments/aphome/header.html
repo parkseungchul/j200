@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<header th:fragment="headerFragment">
+
+    <div sec:authorize="!isAuthenticated()">
+        헤더 권한없는 사람만 layout3
+    </div>
+    <div sec:authorize="isAuthenticated()">
+        헤더 권한있는 누구나.. layout3
+    </div>
+    <div sec:authorize="hasRole('ROLE_ADMIN')">
+        헤더 어드민만 보여짐 layout3
+    </div>
+
+    <div style="background-color: skyblue">
+        <ul>
+            <li><a th:href="@{/introduce}">소개</a></li>
+            <li><a th:href="@{/charge}">요금</a></li>
+            <li><a th:href="@{/information}">고객센터</a>
+                <ul>
+                    <li><a th:href="@{/information}">공지사항</a></li>
+                    <li><a th:href="@{/guide}">사용자 가이드</a></li>
+                    <li><a th:href="@{/faq}">자주 묻는 질문</a></li>
+                    <li><a th:href="@{/signIn}">로그인</a></li>
+                    <div sec:authorize="isAuthenticated()">
+                        권한있는 누구나..
+                    </div>
+                    <div sec:authorize="hasRole('ROLE_ADMIN')">
+                        어드민만 보여짐
+                    </div>
+                    <li><a th:href="@{/signOut}">로그아웃</a></li>
+                </ul>
+            </li>
+            <li><a th:href="@{/admin/manage}">관리자</a></li>
+        </ul>
+    </div>
+</header>
+
+</html>
