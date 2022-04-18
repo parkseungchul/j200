@@ -126,3 +126,15 @@
  - [(00:43)] OS Command 수행하고 결과 보기
  - [(11:12)] File Control
 <hr>
+
+#### J215. 스프링 로그에 UUID 넣기 (spring boot)
+#### Links: [Youtube](https://www.youtube.com/watch?v=KoAQOGoS-oA&list=PLogzC_RPf25FXvkWEK4IafUylvWCkPI8i&index=15), [Source](https://github.com/parkseungchul/j200/tree/master/j215)
+ - [(00:00)] 프로젝트 만들기
+ - [(02:50)] 테스트 환경 만들기
+ - [(20:06)] 기본 로그 확인
+ - [(22:51)] AOP 추가
+ - [(26:17)] Logger 수정
+ - [(34:37)] 예외 처리 수정
+ - [(37:35)] Cookie 추가
+ - [(40:36)] 일괄 UUID 확인
+<hr>
