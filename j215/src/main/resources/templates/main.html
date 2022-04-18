@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>index</title>
+</head>
+<body>
+<table th:border="1">
+  <tr>
+    <th>부서 번호</th>
+    <th>부서 이름</th>
+    <th>부서 위치</th>
+  </tr>
+  <tr th:each="dept : ${deptList}">
+    <td>
+      <a th:href="@{/dept(deptNo=${dept.deptNo})}" th:text="${dept.deptNo}"></a>
+    </td>
+    <td th:text="${dept.dName}"/>
+    <td th:text="${dept.loc}"/>
+  </tr>
+  <tr>
+    <td colspan="3">
+      <a th:href="@{/dept}" th:text="추가"></a>
+    </td>
+  </tr>
+</table>
+<a id="list"  class="btn">리스트</a>
+<script type="text/javascript">
+
+  function uuidv4() {
+    return ([1e7]+-1e3+-4e3+-8e3+-1e11).replace(/[018]/g, c =>
+            (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)
+    )
+  }
+
+  let list = document.querySelector("#list");
+  list.onclick = function () {
+
+    let uuid = uuidv4();
+    document.cookie = "traceId=" + uuid + "; max-age=1";
+    console.log('--------------------------------------->'+uuid);
+    location.href = "/";
+  }
+
+
+</script>
+
+</body>
+</html>
