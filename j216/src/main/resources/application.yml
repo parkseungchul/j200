@@ -1,0 +1,10 @@
+logging:
+  level:
+    root: debug
+    org.springframework.boot.actuate: trace
+    com.example: debug
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, loggers
