@@ -49,6 +49,7 @@ public final class Logger implements org.slf4j.Logger, LocationAwareLogger, Appe
 
     /**
      * The name of this logger
+     * The name of this logger
      */
     private String name;
 
@@ -496,10 +497,12 @@ public final class Logger implements org.slf4j.Logger, LocationAwareLogger, Appe
         return traceId == null?"":traceId;
     }
 
-
     public void debug(String msg) {
-        filterAndLog_0_Or3Plus(FQCN, null, Level.DEBUG, getTraceID() +msg, null, null);
+        filterAndLog_0_Or3Plus(FQCN, null, Level.DEBUG, getTraceID() + msg, null, null);
     }
+
+
+
 
     public void debug(String format, Object arg) {
         filterAndLog_1(FQCN, null, Level.DEBUG, format, arg, null);

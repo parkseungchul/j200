@@ -1,7 +1,6 @@
 logging:
   level:
-    root: debug
-    org.springframework.boot.actuate: trace
+    root: info
     com.example: debug
 management:
   endpoints:

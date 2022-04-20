@@ -14,4 +14,4 @@ spring:
 logging:
   level:
     root: info
-    com.psc.j216: debug
+    com.psc.j215: debug

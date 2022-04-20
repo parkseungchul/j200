@@ -21,7 +21,9 @@ public class DeptController {
         log.debug("main 1");
         deptService.deptList();
         modelMap.addAttribute("deptList", deptService.deptList());
-        log.debug("main 2");
+        log.trace("trace");
+        log.debug("debug");
+        log.error("error");
         return "main";
     }
 
