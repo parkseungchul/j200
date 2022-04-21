@@ -138,3 +138,10 @@
  - [(37:35)] Cookie 추가
  - [(40:36)] 일괄 UUID 확인
 <hr>
+
+#### J216. 스프링 로그 동적 변경 actuator 아님!
+#### Links: [Youtube](https://www.youtube.com/watch?v=EcSoSvdXZoU&list=PLogzC_RPf25FXvkWEK4IafUylvWCkPI8i&index=16), [Source](https://github.com/parkseungchul/j200/tree/master/j216)
+ - [(00:00)] 강의 개요
+ - [(01:13)] Spring Actuator 를 이용하여 로그 동적 변경
+ - [(09:22)] Java Reflection 을 이용하여 로그 동적 변경
+<hr>
