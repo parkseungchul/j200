@@ -1,20 +1,12 @@
 package com.psc.j215.controller.api;
 
-import ch.qos.logback.classic.Level;
-import com.psc.j215.core.LogbackUtils;
 import com.psc.j215.dto.DeptDto;
-
-
-import org.apache.logging.log4j.LogManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
-
-
 
 @RestController
 public class RestApiController {
@@ -87,14 +79,6 @@ public class RestApiController {
                 }
             }
              **/
-
-
-
-
-
-
-
-
         } catch (Throwable e) {
             e.printStackTrace();
 
