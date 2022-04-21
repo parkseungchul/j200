@@ -19,12 +19,14 @@ import java.lang.reflect.Method;
 @RestController
 public class RestApiController {
 
-    @RequestMapping("/inject.json")
+    @RequestMapping("/reflection.json")
     public DeptDto getDept(String level){
 
 
         try {
-/**
+
+            String packageName = "com.psc.j216";
+
             Class cls = Class.forName("org.slf4j.LoggerFactory");
             Method m[] = cls.getDeclaredMethods();
             Method method = null;
@@ -39,15 +41,12 @@ public class RestApiController {
                     if(methodName.equals("getLogger") && paraType.equals("java.lang.String")){
                         System.out.println("OK");
                         method = m[i];
-                        break;
                     }
                 }
             }
 
 
-
-
-            Class cls2 = method.invoke(cls,"com.psc.j216").getClass();
+            Class cls2 = method.invoke(cls,packageName).getClass();
             Method m2[] = cls2.getDeclaredMethods();
             Method method2 = null;
             for (int i = 0; i < m2.length; i++){
@@ -66,7 +65,18 @@ public class RestApiController {
                 }
             }
 
+            // 파라미터 오브젝트화
+            Class<?> clazz = Class.forName("ch.qos.logback.classic.Level");
+            Field field = clazz.getField(level);
+            Object logLevelObj = field.get(null);
 
+
+            Logger loggerObj = LoggerFactory.getLogger(packageName);
+            method2.invoke(loggerObj, logLevelObj);
+
+
+
+            /**
             Field[] fields = cls2.getDeclaredFields();
             Field field = null;
             for(int i =0; i< fields.length; i++){
@@ -74,28 +84,13 @@ public class RestApiController {
 
                 if(fields[i].getName().equals("level")){
                     field = fields[i];
-
                 }
             }
-
-
-            //Level level = Level.toLevel("ERROR");
-            //field.setAccessible(true);
-            //field.set(cls2, org.apache.logging.log4j.Level.toLevel("ERROR"));
+             **/
 
 
 
 
-            // 변경기준 패키지명(root package name)
-            //String packageName = "com.deoklab.app";
-
-            // 변경 전 로그레벨
-
-            //Logger loggerObtained = LoggerFactory.getLogger("com.psc.j215");
-
-
-**/
-            LogbackUtils.setLogLevel("com.psc.j215", level);
 
 
 
