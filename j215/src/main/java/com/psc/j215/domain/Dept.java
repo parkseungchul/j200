@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+
 @Setter
 @Getter
 @ToString
@@ -15,6 +16,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name="dept")
 public class Dept {
+
 
     @Id
     Integer deptNo;

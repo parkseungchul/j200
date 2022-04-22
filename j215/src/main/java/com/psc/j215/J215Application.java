@@ -1,5 +1,6 @@
 package com.psc.j215;
 
+import ch.qos.logback.classic.Logger;
 import com.psc.j215.domain.Dept;
 import com.psc.j215.domain.DeptRepository;
 import lombok.AllArgsConstructor;
@@ -23,6 +24,9 @@ public class J215Application {
         for(int i=0; i< 10; i++){
             deptRepository.save(new Dept(i,String.valueOf(i), String.valueOf(i)));
         }
+
+
+
     }
 
 }

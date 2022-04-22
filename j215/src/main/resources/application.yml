@@ -10,7 +10,7 @@ spring:
     password: sa
   jpa:
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: update
 logging:
   level:
     root: info
