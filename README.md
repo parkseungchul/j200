@@ -145,3 +145,10 @@
  - [(01:13)] Spring Actuator 를 이용하여 로그 동적 변경
  - [(09:22)] Java Reflection 을 이용하여 로그 동적 변경
 <hr>
+
+#### J2021. log4j2 DB Adapter  만드는 중
+#### Links: [Youtube](), [Source]()
+- [()] 
+- [()] 
+- [()] 
+<hr>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO">
+    <Properties>
+        <Property name="logName">test</Property>
+        <Property name="layoutPattern">%d [%t] %-5level %c(%M:%L) - %m%n</Property>
+    </Properties>
+    <Appenders>
+        <Console name="console" target="SYSTEM_OUT">
+            <PatternLayout pattern="${layoutPattern}" />
+        </Console>
+
+        <RollingFile name="file" fileName="./log/${logName}.log" filePattern="./log/logs/${logName}_%d{yyyy-MM-dd}_%i.log">
+            <PatternLayout pattern="${layoutPattern}" />
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" /><!-- 일별-->
+            </Policies>
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+
+        <logger name="org.springframework" level="info" additivity="false" >
+            <AppenderRef ref="console" />
+            <AppenderRef ref="file" />
+        </logger>
+
+        <logger name="com.psc.j2021"  level="trace" additivity="false" >
+            <AppenderRef ref="console" />
+            <AppenderRef ref="file" />
+        </logger>
+
+        <Root level="error" additivity="false" >
+            <AppenderRef ref="console"/>
+            <AppenderRef ref="file"/>
+        </Root>
+
+    </Loggers>
+</Configuration>
