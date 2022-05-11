@@ -1,6 +1,8 @@
 package com.psc.j215.core;
 
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.HttpMethod;
+import org.springframework.http.HttpStatus;
 import org.springframework.lang.Nullable;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
@@ -18,6 +20,15 @@ public class Handler implements HandlerInterceptor {
 
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
             throws Exception {
+
+        String method = request.getMethod();
+        if(HttpMethod.DELETE.matches(method)||HttpMethod.OPTIONS.matches(method)){
+            response.sendError(HttpStatus.METHOD_NOT_ALLOWED.value());
+            return false;
+        }
+
+
+
         String traceId = "";
 
         if( request.getCookies() != null){
