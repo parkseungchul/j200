@@ -9,6 +9,10 @@
 - http://localhost/
 - http://localhost/fileView <== 폴더에 대한 예외처리가 되어 있지 않음 
 
+
+### TODO LIST
+- dockerfile 만들기
+
 ### Action Command
 ### DB 초기 세팅
 <pre><code>

@@ -17,7 +17,23 @@
                 <TimeBasedTriggeringPolicy interval="1" /><!-- 일자별 로그 파일 생성-->
             </Policies>
         </RollingFile>
+
+        <JDBC name="dbLogger" tableName="app_logs">
+            <ConnectionFactory class="com.psc.j2021.common.ConnectionFactory" method="getDatabaseConnection" />
+            <Column name="log_id" pattern="%u" />
+            <Column name="entry_date" isEventTimestamp="true" />
+            <Column name="logger" pattern="%logger" />
+            <Column name="log_level" pattern="%level" />
+            <Column name="message" pattern="%m" />
+            <Column name="exception" pattern="%throwable " />
+        </JDBC>
+
+
     </Appenders>
+
+
+
+
 
     <Loggers>
 
@@ -29,6 +45,7 @@
 
         <logger name="com.psc"  level="info" additivity="false" >
             <AppenderRef ref="console" />
+            <AppenderRef ref="dbLogger" />
             <AppenderRef ref="file"/>
         </logger>
 
