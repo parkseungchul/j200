@@ -147,7 +147,7 @@
 <hr>
 
 #### J2021. log4j2 DB Adapter  만드는 중
-#### Links: [Youtube](hhttps://www.youtube.com/watch?v=ikE9QOJjlkk&list=PLogzC_RPf25FXvkWEK4IafUylvWCkPI8i&index=17), [Source](https://github.com/parkseungchul/j200/tree/master/j2021)
+#### Links: [Youtube](https://www.youtube.com/watch?v=ikE9QOJjlkk&list=PLogzC_RPf25FXvkWEK4IafUylvWCkPI8i&index=17), [Source](https://github.com/parkseungchul/j200/tree/master/j2021)
  - [(00:00)] 강의 안내
  - [(01:44)] log4j2 로 전환
  - [(13:02)] DB Appender 추가
