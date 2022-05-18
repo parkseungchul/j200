@@ -11,5 +11,4 @@ public class J2021Application {
     public static void main(String[] args) {
         SpringApplication.run(J2021Application.class, args);
     }
-
 }
