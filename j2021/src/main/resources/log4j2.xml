@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration status="INFO">
+<Configuration status="INFO" packages="com.psc">
 
     <Properties>
         <Property name="logFileName">spring-log4j2</Property>
-        <Property name="consoleLayout">%style{%d{ISO8601}}{black} %highlight{%-5level }[%style{%t}{bright,blue}] %style{%C{1.}}{bright,yellow}: %msg%n%throwable</Property>
-        <Property name="fileLayout">%d [%t] %-5level %c(%M:%L) - %m%n</Property>
+        <Property name="consoleLayout">%traceId | %style{%d{ISO8601}}{black} %highlight{%-5level }[%style{%t}{bright,blue}] %style{%C{1.}}{bright,yellow}: %msg%n%throwable</Property>
+        <Property name="fileLayout">%traceId %d [%t] %-5level %c(%M:%L) - %m%n</Property>
     </Properties>
 
     <Appenders>
@@ -21,6 +21,7 @@
         <JDBC name="dbLogger" tableName="app_logs">
             <ConnectionFactory class="com.psc.j2021.common.ConnectionFactory" method="getDatabaseConnection" />
             <Column name="log_id" pattern="%u" />
+            <Column name="trace_id" pattern="%traceId" />
             <Column name="entry_date" isEventTimestamp="true" />
             <Column name="logger" pattern="%logger" />
             <Column name="log_level" pattern="%level" />
@@ -45,6 +46,7 @@
 
         <logger name="com.psc"  level="info" additivity="false" >
             <AppenderRef ref="console" />
+            <AppenderRef ref="dbLogger" />
             <AppenderRef ref="file"/>
         </logger>
 

@@ -22,6 +22,7 @@ public class AppLogs {
     private Timestamp entry_date;
     private String logger;
     private String log_level;
+    private String trace_id;
 
 
     @Lob
