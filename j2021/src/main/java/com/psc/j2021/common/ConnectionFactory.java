@@ -27,7 +27,7 @@ public class ConnectionFactory {
 
         GenericObjectPool<PoolableConnection> pool = new GenericObjectPool<PoolableConnection>();
         DriverManagerConnectionFactory connectionFactory = new DriverManagerConnectionFactory(
-                "jdbc:mysql://192.168.100.100:3306/j2021", properties
+                "jdbc:mysql://localhost:3306/j2021", properties
         );
         new PoolableConnectionFactory(connectionFactory, pool, null, "SELECT 1", 3, false, false, Connection.TRANSACTION_READ_COMMITTED);
 
