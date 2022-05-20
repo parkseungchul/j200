@@ -2,7 +2,7 @@
 <hr>
 
 #### J201. How to Use YUM Files to Smart
-##### Links: [Youtube](https://www.youtube.com/watch?v=QFsFOggPXAc&list=PLogzC_RPf25FXvkWEK4IafUylvWCkPI8i&index=1){:target="_blank"}, [Source](https://github.com/parkseungchul/j200/tree/master/j201)
+##### Links: [Youtube](https://www.youtube.com/watch?v=QFsFOggPXAc&list=PLogzC_RPf25FXvkWEK4IafUylvWCkPI8i&index=1){:target="_blank" rel="noopener"}, [Source](https://github.com/parkseungchul/j200/tree/master/j201)
  - [(00:00) profile 파일 환경 별로 분리하여 적용하기](https://www.youtube.com/watch?v=QFsFOggPXAc&list=PLogzC_RPf25FXvkWEK4IafUylvWCkPI8i&index=1&t=0s)
  - [(04:49) profile 변수 어플리케이션으로 가져오기](https://www.youtube.com/watch?v=QFsFOggPXAc&list=PLogzC_RPf25FXvkWEK4IafUylvWCkPI8i&index=1&t=289s)
  - [(05:34) 스프링부트 기동할 때 특정 메소드 사용하기](https://www.youtube.com/watch?v=QFsFOggPXAc&list=PLogzC_RPf25FXvkWEK4IafUylvWCkPI8i&index=1&t=334s)
