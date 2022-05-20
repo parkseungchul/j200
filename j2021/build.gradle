@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'com.psc'
-version = '0.0.1-SNAPSHOT'
+version = '0.1'
 sourceCompatibility = '11'
 
 configurations {
@@ -16,6 +16,11 @@ configurations {
         exclude group: 'org.springframework.boot', module: 'spring-boot-starter-logging'
     }
 }
+
+jar {
+    enabled = false
+}
+
 
 repositories {
     mavenCentral()

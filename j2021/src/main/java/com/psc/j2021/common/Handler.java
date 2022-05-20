@@ -27,10 +27,7 @@ public class Handler implements HandlerInterceptor {
             return false;
         }
 
-
-
         String traceId = "";
-
         if( request.getCookies() != null){
             for(Cookie cookie: request.getCookies()){
                 if(cookie.getName().equals("traceId")){
@@ -38,7 +35,6 @@ public class Handler implements HandlerInterceptor {
                 }
             }
         }
-
         HttpSession httpSession = request.getSession();
         if(traceId == null|| traceId.equals("")){
             traceId = UUID.randomUUID().toString();
@@ -46,15 +42,13 @@ public class Handler implements HandlerInterceptor {
         }else{
             httpSession.setAttribute("traceId", traceId);
         }
+        // %traceId 를 위함
         TraceIdConverter.traceId = traceId;
-
         return true;
     }
 
-
     public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler,
                             @Nullable ModelAndView modelAndView) throws Exception {
-
         request.getSession().setAttribute("traceId", "");
     }
 }

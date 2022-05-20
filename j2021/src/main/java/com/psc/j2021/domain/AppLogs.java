@@ -19,10 +19,11 @@ public class AppLogs {
 
     @Id
     private String log_id;
+    private String trace_id;
     private Timestamp entry_date;
     private String logger;
     private String log_level;
-    private String trace_id;
+
 
 
     @Lob

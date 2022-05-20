@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration status="INFO" packages="com.psc">
 
+<Configuration status="INFO" packages="com.psc" monitorInterval="30">
     <Properties>
         <Property name="logFileName">spring-log4j2</Property>
-        <Property name="consoleLayout">%traceId | %style{%d{ISO8601}}{black} %highlight{%-5level }[%style{%t}{bright,blue}] %style{%C{1.}}{bright,yellow}: %msg%n%throwable</Property>
+        <Property name="consoleLayout">%traceId | %style{%d{ISO8601}}{green} %highlight{%-5level }[%style{%t}{bright,blue}] %style{%C{1.}}{bright,yellow}: %msg%n%throwable</Property>
         <Property name="fileLayout">%traceId %d [%t] %-5level %c(%M:%L) - %m%n</Property>
     </Properties>
-
     <Appenders>
         <Console name="console" target="SYSTEM_OUT">
             <PatternLayout pattern="${consoleLayout}" />
@@ -17,7 +16,6 @@
                 <TimeBasedTriggeringPolicy interval="1" /><!-- 일자별 로그 파일 생성-->
             </Policies>
         </RollingFile>
-
         <JDBC name="dbLogger" tableName="app_logs">
             <ConnectionFactory class="com.psc.j2021.common.ConnectionFactory" method="getDatabaseConnection" />
             <Column name="log_id" pattern="%u" />
@@ -28,17 +26,9 @@
             <Column name="message" pattern="%m" />
             <Column name="exception" pattern="%throwable " />
         </JDBC>
-
-
     </Appenders>
 
-
-
-
-
     <Loggers>
-
-
         <logger name="org.springframework" level="info" additivity="false" >
             <AppenderRef ref="console" />
             <AppenderRef ref="file"/>
