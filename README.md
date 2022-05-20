@@ -162,8 +162,5 @@
  - 대안 코드 
    - Logger 는 수정하지 말고 logger pattern 추가
    - log4j2.xml monitorInterval 옵션을 통해 변경
+   - 운영 환경에서의 jar 파일 대응 전략 포함
 
-
-
-
-#### 217 UI 템플릿 만들기 

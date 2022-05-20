@@ -34,3 +34,4 @@
 /test_db.mv.db
 /test_db.lock.db
 /test_db.trace.db
+/logs/spring-log4j2.log

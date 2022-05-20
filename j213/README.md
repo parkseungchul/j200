@@ -4,6 +4,8 @@
 - File upload/download
 - Mapper 사용
 - Thymeleaf layout
+- 외부 변수 적용 script 폴더
+- jar 파일 한개만 남기기 build.gradle
 
 ### Test URL
 - http://localhost/
