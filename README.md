@@ -146,7 +146,7 @@
  - [(09:22)] Java Reflection 을 이용하여 로그 동적 변경
 <hr>
 
-#### J2021. log4j2 DB Adapter  만드는 중
+#### J217. Spring Log4j2 DB Appender
 #### Links: [Youtube](https://www.youtube.com/watch?v=ikE9QOJjlkk&list=PLogzC_RPf25FXvkWEK4IafUylvWCkPI8i&index=17), [Source](https://github.com/parkseungchul/j200/tree/master/j2021)
  - [(00:00)] 강의 안내
  - [(01:44)] log4j2 로 전환
@@ -154,8 +154,14 @@
  - [(17:49)] 테스트 확인
 <hr>
 
-
-
+### J218. Spring Log4j2 Final (업로드 예정)
+#### Links:  [Source](https://github.com/parkseungchul/j200/tree/master/j2021)
+ - 코드 리뷰와 반성
+   - Logger 를 다 수정해야만 하는가?
+   - Reflection 을 통한 로그 동적 변경이 최선인가?
+ - 대안 코드 
+   - Logger 는 수정하지 말고 logger pattern 추가
+   - log4j2.xml monitorInterval 옵션을 통해 변경
 
 
 
