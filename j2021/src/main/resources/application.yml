@@ -5,7 +5,7 @@ logging:
 
 spring:
   profiles:
-    active: mac
+    active: window
   jpa:
     hibernate:
       ddl-auto: update

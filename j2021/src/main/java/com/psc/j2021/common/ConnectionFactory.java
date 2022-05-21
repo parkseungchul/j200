@@ -11,6 +11,7 @@ import org.apache.commons.dbcp.PoolableConnection;
 import org.apache.commons.dbcp.PoolableConnectionFactory;
 import org.apache.commons.dbcp.PoolingDataSource;
 import org.apache.commons.pool.impl.GenericObjectPool;
+import org.springframework.stereotype.Component;
 
 public class ConnectionFactory {
 
@@ -25,9 +26,10 @@ public class ConnectionFactory {
         properties.setProperty("user", "user01");
         properties.setProperty("password", "user01"); // or get properties from some configuration file
 
+        // TODO: 하드 코딩 된 부분
         GenericObjectPool<PoolableConnection> pool = new GenericObjectPool<PoolableConnection>();
         DriverManagerConnectionFactory connectionFactory = new DriverManagerConnectionFactory(
-                "jdbc:mysql://localhost:3306/j2021", properties
+                "jdbc:mysql://192.168.100.100:3306/j2021", properties
         );
         new PoolableConnectionFactory(connectionFactory, pool, null, "SELECT 1", 3, false, false, Connection.TRANSACTION_READ_COMMITTED);
 

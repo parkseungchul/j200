@@ -155,7 +155,11 @@
 
 
 ### J218. Spring Log4j2 Final (업로드 예정)
-#### Links:  [Source](https://github.com/parkseungchul/j200/tree/master/j2021)
+#### Links: [Youtube](https://www.youtube.com/watch?v=eoAnhjemtAk&list=PLogzC_RPf25FXvkWEK4IafUylvWCkPI8i&index=18),  [Source](https://github.com/parkseungchul/j200/tree/master/j2021)
+ - (00:00) 강의 안내
+ - (03:35) 로그 패턴 커스텀
+ - (17:02) traceId 컬럼에 넣기
+ - (23:06) 동적 로그 변경 전략
  - 코드 리뷰와 반성
    - Logger 를 다 수정해야만 하는가?
    - Reflection 을 통한 로그 동적 변경이 최선인가?

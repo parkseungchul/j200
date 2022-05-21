@@ -1,5 +1,6 @@
 package com.psc.j2021.common;
 
+import com.psc.j2021.util.TraceIdConverter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
@@ -43,7 +44,7 @@ public class Handler implements HandlerInterceptor {
             httpSession.setAttribute("traceId", traceId);
         }
         // %traceId 를 위함
-        TraceIdConverter.traceId = traceId;
+        //TraceIdConverter.traceId = traceId;
         return true;
     }
 
