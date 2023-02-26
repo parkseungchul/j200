@@ -54,7 +54,7 @@
 #### Links: [Youtube](https://www.youtube.com/watch?v=qt6wRvWrkZk&list=PLogzC_RPf25FXvkWEK4IafUylvWCkPI8i&index=6), [Source](https://github.com/parkseungchul/j200/tree/master/j205/biz2)
 
 
-#### J206. Spring WebFlux vs Spring MVC and K6 load testing(.feat Thymeleaf 적용 했다구...)
+#### J207. Spring WebFlux vs Spring MVC and K6 load testing(.feat Thymeleaf 적용 했다구...)
 #### Links: [Youtube](https://www.youtube.com/watch?v=qBq1ky5c9Eo&list=PLogzC_RPf25FXvkWEK4IafUylvWCkPI8i&index=7), [Source](https://github.com/parkseungchul/j200/tree/master/j207)
  - [(00:00) Why WebFlux?](https://www.youtube.com/watch?v=qBq1ky5c9Eo&list=PLogzC_RPf25FXvkWEK4IafUylvWCkPI8i&index=7&t=0s)
  - [(02:26) Spring WebFlux Code](https://www.youtube.com/watch?v=qBq1ky5c9Eo&list=PLogzC_RPf25FXvkWEK4IafUylvWCkPI8i&index=7&t=146s)

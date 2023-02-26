@@ -15,7 +15,7 @@
 /j201/target/classes/
 /j205/gradlew
 /j205/gradlew.bat
-/j206/gradle/wrapper/
+/j207/gradle/wrapper/
 /j207/.gradle/
 /j207/gradle/wrapper/
 /j207/gradlew
@@ -27,9 +27,9 @@
 /j208/gradle/wrapper/
 /j208/gradlew
 /j208/gradlew.bat
-/j206/.gradle/
-/j206/gradlew
-/j206/gradlew.bat
+/j207/.gradle/
+/j207/gradlew
+/j207/gradlew.bat
 /img.png
 /test_db.mv.db
 /test_db.lock.db
